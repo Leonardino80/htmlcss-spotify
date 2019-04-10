@@ -42,3 +42,86 @@ text-align: center;
   display: inline-block;
   padding: 15px;
 }
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-grow:2;
+  display: inline-block;
+}
+
+p{
+  text-align: center;
+}
+
+.card .descrizione{
+  font-weight:bold;
+  color: white;
+  margin-bottom: 0;
+}
+
+.genere{
+  font-weight:bold;
+  color: orange;
+  margin-top: 0;
+}
+
+.immagine1{
+ width: 250px;
+ height: 250px;
+ background-image: url('immagini/img1.jpg');
+ background-size: cover;
+ position: relative;
+}
+
+.immagine2{
+ width: 250px;
+ height: 250px;
+ background-image: url('immagini/img2.jpg');
+ background-size: cover;
+ position: relative;
+}
+
+.immagine3{
+ width: 250px;
+ height: 250px;
+ background-image: url('immagini/img3.jpg');
+ background-size: cover;
+ position: relative;
+}
+
+.immagine4{
+ width: 250px;
+ height: 250px;
+ background-image: url('immagini/img4.jpg');
+ background-size: cover;
+ position: relative;
+}
+
+.tag1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.tag2{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.card i{
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
