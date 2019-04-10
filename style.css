@@ -1,0 +1,52 @@
+* {
+  font-family:sans-serif;
+  color: lightgrey;
+}
+
+.container-fluid {
+  background-color: black;
+  padding:50px;
+}
+
+
+ li {
+  list-style:none;
+   position: relative;
+   padding-left:50px;
+   line-height: 3;
+   font-size:15px;
+   display:block;
+}
+
+
+a {
+  text-decoration: none !important;
+  color: lightgrey;
+}
+
+.btn{
+  border-radius: 30px;
+  width: 100%;
+}
+
+.row .col-md-3:last-child{
+border-left: 1px solid white;
+}
+
+.row .col-md-3{
+padding: 0;
+}
+
+
+ul li:last-child{
+  background-color: none !important;
+}
+
+li:hover {
+  border-left: 2px solid green;
+
+}
+
+ul , li {
+    margin: 0; padding: 0;
+}
