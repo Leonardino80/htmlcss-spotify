@@ -1,12 +1,19 @@
 * {
-  color: red;
+  color: white;
 }
+
+h3{
+  display: inline-block;
+}
+
 .navy{
   background-color: black;
   padding: 30px;
   position: fixed;
   top:0;
   left:0;
+  height: 100vh;
+  z-index: 1;
 }
 
 ul{
@@ -14,13 +21,16 @@ ul{
   padding: 0;
   list-style-type: none;
 }
+.logo{
+  font-size: 20px;
+}
 
  .navy li {
    line-height: 3;
    font-size:15px;
 }
 a{
-  color: pink;
+  color: white;
 }
 
 a.hover {
@@ -44,18 +54,24 @@ text-align: center;
 }
 
 .container{
+  padding-left: 30px;
+  padding-right: 15px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid red;
   display: flex;
-  justify-content: space-around;
-  align-items: left;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
+  background: rgb(129,114,81);
+  background: linear-gradient(45deg, rgba(129,114,81,1) 7%, rgba(9,15,17,1) 100%);
 }
 
 .card {
   flex-grow:2;
   display: inline-block;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 p{
@@ -74,12 +90,17 @@ p{
   margin-top: 0;
 }
 
+.shadow{
+  box-shadow: 10px 10px 5px black;
+}
+
 .immagine1{
  width: 250px;
  height: 250px;
  background-image: url('immagini/img1.jpg');
  background-size: cover;
  position: relative;
+ margin-bottom: 10px;
 }
 
 .immagine2{
@@ -88,6 +109,7 @@ p{
  background-image: url('immagini/img2.jpg');
  background-size: cover;
  position: relative;
+  margin-bottom: 10px;
 }
 
 .immagine3{
@@ -96,6 +118,7 @@ p{
  background-image: url('immagini/img3.jpg');
  background-size: cover;
  position: relative;
+  margin-bottom: 10px;
 }
 
 .immagine4{
@@ -104,18 +127,19 @@ p{
  background-image: url('immagini/img4.jpg');
  background-size: cover;
  position: relative;
+  margin-bottom: 10px;
 }
 
 .tag1{
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
 
 .tag2{
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -124,4 +148,38 @@ p{
   position: absolute;
   top: 3%;
   left: 3%;
+}
+
+footer{
+  display: block;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  z-index: 99;
+}
+
+.player li{
+  display: inline-block;
+  padding: 15px;
+  z-index: 99;
+}
+
+.player1{
+  width: 100%;
+  background-color: darkgrey;
+  z-index: 99;
+}
+
+ @media screen and (max-width:768px){
+
+   span, .btn, .hid{
+     display: none;
+   }
+  .navy{
+    padding: 10px;
+  }
+
+  .filters li {
+    display: block;
+  }
 }
